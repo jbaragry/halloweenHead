@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content = "height = device-height, width = 420, user-scalable = no" /> 
+	<title>Halloween Head - Woooooooooo</title>
+	<script type="text/javascript" src="/webiopi.js"></script>
+	<script type="text/javascript">
+   webiopi().ready(function() {
+		var actions_content, sounds_content, button;
+
+      actions_content = $("#actions_content");
+      sounds_content = $("#sounds_content");
+      button = webiopi().createMacroButton("macro", "Awake", "stare");
+      actions_content.append(button); // append button to content div
+      button = webiopi().createMacroButton("macro", "Sleep", "rest");
+      actions_content.append(button); // append button to content div
+      button = webiopi().createMacroButton("macro", "Blink", "blink", [3]);
+      actions_content.append(button); // append button to content div
+      button = webiopi().createMacroButton("macro", "Crazy Blink", "crazyblink", [3]);
+      actions_content.append(button); // append button to content div
+      button = webiopi().createMacroButton("macro", "Scream", "scream");
+      sounds_content.append(button); // append button to content div
+      button = webiopi().createMacroButton("macro", "Laugh", "laugh");
+      sounds_content.append(button); // append button to content div
+      button = webiopi().createMacroButton("macro", "Scary", "moreSounds");
+      sounds_content.append(button); // append button to content div
+   });
+		
+   </script>
+
+	<style type="text/css">
+      button {
+         display: block;
+         margin: 5px 5px 5px 5px;
+         width: 160px;
+         height: 45px;
+         font-size 24pt;
+         font-weight bold;
+         color: darkred;
+      }
+	</style>
+</head>
+<body>
+   <table align="center">
+   <tr>
+   <td colspan=2>
+	<div id="img_content" align="center">
+		<img width="330" height="330" src="stencil-skull.gif"><br/>
+	</div>
+   </td>
+   </tr>
+   <tr>
+   <td>
+	   <div id="actions_content" align="center">
+   </td>
+   <td>
+	   <div id="sounds_content" align="center">
+   </td>
+   </tr>
+   </table>
+</body>
+</html>

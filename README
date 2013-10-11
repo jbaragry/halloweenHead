@@ -1,0 +1,17 @@
+Screwing around with the RPi to create a HalloweenHead - 2013
+Code started as a HalloweenHead class with methods that wrap the GPIO functions
+It includes a separate console client to work the class methods.
+
+Features:
+   1. Manipulate 2 LED eyes: stare, rest, blink, crazyblink (opposite eyes)
+   2. Play sounds: background sound, screams, laughs, etc
+
+
+However, when adding a webclient I couldn't get a the webiopi package to work with the class code so I merged the client and class code into 
+
+Files:
+   1. halloweenHead.py: class with methods to flash leds on the gpio and play sounds on the pi
+   2. headCmdclient.py: dumb console client to use the head class
+   3. headWebclient.py: combine head and client code with webiopi to make it available through a rest intf with a simple html page.
+
+
